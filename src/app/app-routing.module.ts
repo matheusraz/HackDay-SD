@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
-    {path: 'bus',
-    loadChildren: './bus/bus.module#BusModule'
+    {path: 'company',
+    loadChildren: './company/company.module#CompanyModule'
     },
-    {path: '', redirectTo: '/bus', pathMatch: 'full'}
+    {path: '', redirectTo: '/company', pathMatch: 'full'}
 ];
 
 @NgModule({
