@@ -13,11 +13,7 @@ export class CompanyComponent implements OnInit {
 
   // public companies: Company[] = [];
   public companies: Company[] = [
-    {name: 'E1'},
-    {name: 'E2'},
-    {name: 'E3'},
-    {name: 'E4'},
-    {name: 'E5'}
+    {name: 'E1'}
   ];
 
   constructor() { }

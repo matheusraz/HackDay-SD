@@ -16,16 +16,7 @@ export class BusComponent implements OnInit {
 
   // public buses: Bus[] = [];
   public buses: Bus[] = [
-    {registration: 1},
-    {registration: 2},
-    {registration: 3},
-    {registration: 4},
-    {registration: 5},
-    {registration: 6},
-    {registration: 7},
-    {registration: 8},
-    {registration: 9},
-    {registration: 10}
+    {registration: 1111}
   ];
 
   constructor(private route: ActivatedRoute) { }
