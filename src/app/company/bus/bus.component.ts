@@ -1,6 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Bus } from '../../models/bus.model';
+import { CompanyService } from '../company.service';
 
 @Component({
   selector: 'app-bus',
@@ -8,6 +9,8 @@ import { Bus } from '../../models/bus.model';
   styleUrls: ['./bus.component.css']
 })
 export class BusComponent implements OnInit {
+
+  private companyService: CompanyService;
 
   public companyName: string;
 

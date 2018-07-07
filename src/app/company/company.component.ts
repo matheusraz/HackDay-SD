@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Company } from '../models/company.model';
+import { CompanyService } from './company.service';
 
 @Component({
   selector: 'app-company',
@@ -7,6 +8,8 @@ import { Company } from '../models/company.model';
   styleUrls: ['./company.component.css']
 })
 export class CompanyComponent implements OnInit {
+
+  private companyService: CompanyService;
 
   public companies: Company[] = [
     {name: 'E1'},
