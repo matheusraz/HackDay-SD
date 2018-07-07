@@ -9,11 +9,11 @@ const busRoutes: Routes = [
     component: CompanyComponent,
     children: [
         {
-            path: 'bus',
+            path: 'company/:name/bus',
             component: BusComponent,
             children: [
                 {
-                    path: ':matricula',
+                    path: ':registration',
                     component: TrackerComponent
                 }
             ]

@@ -4,7 +4,11 @@
             Company
         </div>
         <div class="card-body">
-            <!-- Ngfor dos onibus -->
+            <li *ngFor="let company of companies">
+                <button routerLink="company/{{company.name}}/bus">
+                    {{company.name}}
+                </button>
+            </li>
         </div>
     </div>
 </div>

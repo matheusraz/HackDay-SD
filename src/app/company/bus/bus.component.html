@@ -4,7 +4,11 @@
             Bus
         </div>
         <div class="card-body">
-            <!-- Ngfor dos onibus -->
+            <li *ngFor="let bus of buses">
+                <button routerLink="{{bus.registration}}">
+                    {{bus.registration}}
+                </button>
+            </li>
         </div>
     </div>
 </div>
