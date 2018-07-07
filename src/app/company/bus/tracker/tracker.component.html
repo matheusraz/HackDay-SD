@@ -4,9 +4,10 @@
       Track
     </div>
     <div class="card-body">
-      <ul *ngFor="let tracker of trackers">
-        <li>Latitude: {{tracker.latitude}}; Longitude: {{tracker.longitude}}; Hora: {{tracker.time}}</li>
-      </ul>
+      <p>{{tracker.time}}</p>
+      <agm-map [latitude]="tracker.latitude" [longitude]="tracker.longitude">
+        <agm-marker [latitude]="tracker.latitude" [longitude]="tracker.longitude"></agm-marker>
+      </agm-map>
     </div>
   </div>
 </div>

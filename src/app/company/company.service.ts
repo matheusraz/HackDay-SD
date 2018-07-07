@@ -12,10 +12,10 @@ export class CompanyService {
   constructor(private httpClient: HttpClient) { }
 
   companies(): Observable<any> {
-    return this.httpClient.get('http://localhost:xxxx/companies');
+    return this.httpClient.get('http://localhost:8080/kompany');
   }
 
   buses(params?: Params): Observable<any> {
-    return this.httpClient.get(`http://localhost:xxxx/companies`);
+    return this.httpClient.get(`http://localhost:8080/companies`);
   }
 }

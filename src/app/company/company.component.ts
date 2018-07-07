@@ -11,6 +11,7 @@ export class CompanyComponent implements OnInit {
 
   private companyService: CompanyService;
 
+  // public companies: Company[] = [];
   public companies: Company[] = [
     {name: 'E1'},
     {name: 'E2'},
@@ -23,5 +24,10 @@ export class CompanyComponent implements OnInit {
 
   ngOnInit() {
     // Ir no serviço e pegar todos os companies
+    // this.companyService.companies().subscribe(
+    //   companies => {
+    //     this.companies = companies;
+    //   }
+    // );
   }
 }

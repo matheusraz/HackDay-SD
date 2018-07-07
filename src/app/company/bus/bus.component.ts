@@ -14,6 +14,7 @@ export class BusComponent implements OnInit {
 
   public companyName: string;
 
+  // public buses: Bus[] = [];
   public buses: Bus[] = [
     {registration: 1},
     {registration: 2},
@@ -33,5 +34,10 @@ export class BusComponent implements OnInit {
     this.companyName = this.route.snapshot.paramMap.get('name');
 
     // Ir no serviço para pergar os buses a partir do companyName
+    // this.companyService.buses(
+    //   buses => {
+    //     this.buses = buses;
+    //   }
+    // );
   }
 }
