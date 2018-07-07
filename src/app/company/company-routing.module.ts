@@ -5,11 +5,11 @@ import { TrackerComponent } from './bus/tracker/tracker.component';
 import { BusComponent } from './bus/bus.component';
 
 const busRoutes: Routes = [
-    {path: '',
+    {path: 'company',
     component: CompanyComponent,
     children: [
         {
-            path: 'company/:name/bus',
+            path: ':name/bus',
             component: BusComponent,
             children: [
                 {

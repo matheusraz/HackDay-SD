@@ -5,7 +5,7 @@
         </div>
         <div class="card-body">
             <li *ngFor="let company of companies">
-                <button routerLink="company/{{company.name}}/bus">
+                <button routerLink="{{company.name}}/bus">
                     {{company.name}}
                 </button>
             </li>

@@ -19,5 +19,6 @@ export class CompanyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // Ir no serviço e pegar todos os companies
   }
 }
