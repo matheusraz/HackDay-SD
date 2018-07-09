@@ -20,6 +20,7 @@ export class TrackerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.companyService.tracker();
     // this.companyService.tracker(
     //   tracker => {
     //     this.tracker = tracker;
